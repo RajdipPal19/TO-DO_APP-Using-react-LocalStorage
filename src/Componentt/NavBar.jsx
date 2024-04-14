@@ -54,7 +54,7 @@ function Navbar({ handleBackgroundChange }) {
                     <div className="navbar-nav ms-auto">
                     <label htmlFor="backgroundImage" className="btn btn-outline-dark rounded-pill me-2 font-weight-bold">
                             Customize
-                            <input type="file" id="backgroundImage" accept="image/*" style={{ display: 'none' }} onChange={handleImageUpload} />
+                            <input type="file" id="backgroundImage" accept="image/*" style={{ display: 'none',backgroundColor:'red' }} onChange={handleImageUpload} />
                         </label>
                     </div>
                 </div>

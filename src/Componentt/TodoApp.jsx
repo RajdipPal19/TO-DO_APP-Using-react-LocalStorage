@@ -72,11 +72,11 @@ const TodoApp = () => {
                         <input
                             type="text"
                             className="form-control"
-                            placeholder="Enter your todo"
+                            placeholder="Enter your Task..."
                             value={inputValue}
                             onChange={handleInputChange}
                         />
-                        <button className="btn btn-primary my-custom-margin" type="button" onClick={handleAddTodo}>Add Todo</button>
+                        <button className="btn btn-primary my-custom-margin" type="button" onClick={handleAddTodo}>Add Task</button>
                     </div>
                     <ul className="list-group">
                         {todos.map((todo, index) => (
@@ -105,12 +105,14 @@ const TodoApp = () => {
                                     title='Edit the Task Name'
                                     type="text"
                                     className="form-control mb-3"
+                                    placeholder='Write a  task name here...'
                                     value={modalTodoName}
                                     onChange={(e) => setModalTodoName(e.target.value)}
                                 />
                                 <textarea
                                     title='Write a description'
                                     className="form-control mb-3"
+                                    placeholder='Write Some Description ...'
                                     value={modalTodoDescription}
                                     onChange={(e) => setModalTodoDescription(e.target.value)}
                                 ></textarea>
@@ -122,9 +124,15 @@ const TodoApp = () => {
                                 <button title='Click to delete' type="button" className="btn btn-danger" onClick={handleDeleteTodo}>
                                     Delete
                                 </button>
-                                <button type="button" className="btn btn-success" onClick={handleToggleComplete} title='Click to Change the State'>
+                                <button
+                                    type="button"
+                                    className="btn btn-success"
+                                    onClick={handleToggleComplete}
+                                    title={!todos[modalTodoIndex]?.completed ? 'Complete the Task' : 'Continue the Task'}
+                                >
                                     {todos[modalTodoIndex]?.completed ? 'Mark as Uncompleted' : 'Mark as Completed'}
                                 </button>
+
                             </div>
                         </div>
                     </div>
