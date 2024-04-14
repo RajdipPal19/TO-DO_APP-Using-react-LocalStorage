@@ -1,7 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
 body {
   /* background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%); */
   background-image: linear-gradient(to right, #848d35 0%, #466b65 50%, #201f1f 100%);
-
+  font-family: "Nunito Sans", sans-serif;
 }
 
 .container {

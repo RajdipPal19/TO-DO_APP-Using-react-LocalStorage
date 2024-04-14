@@ -83,7 +83,7 @@ const TodoApp = () => {
                             <li
                             key={index}
                             onClick={() => openModal(index)}
-                            className={`list-group-item ${todo.completed ? 'bg-success text-white' : ''} ${todo.completed?'' : 'bg-warning text-dark'}`}
+                            className={`list-group-item ${todo.completed ? 'bg-success text-white' : 'bg-warning text-dark font-weight-bold'}`}
                             title={todo.completed ? ` ${todo.text} is already Completed` : `${todo.text} is not Completed yet`}
                             style={{ cursor: 'pointer' }}
                         >
@@ -111,7 +111,7 @@ const TodoApp = () => {
                                     onChange={(e) => setModalTodoName(e.target.value)}
                                 />
                                 <textarea
-                                    title='Write a description'
+                                    title='Add description'
                                     className="form-control mb-3"
                                     placeholder='Write Some Description ...'
                                     value={modalTodoDescription}
@@ -127,7 +127,7 @@ const TodoApp = () => {
                                 </button>
                                 <button
                                     type="button"
-                                    className="btn btn-success"
+                                    className={todos[modalTodoIndex]?.completed ? 'btn btn-danger' : 'btn btn-success'}
                                     onClick={handleToggleComplete}
                                     title={!todos[modalTodoIndex]?.completed ? 'Complete the Task' : 'Continue the Task'}
                                 >
