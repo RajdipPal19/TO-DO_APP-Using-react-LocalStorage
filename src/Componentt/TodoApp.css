@@ -1,19 +1,17 @@
-/* styles.css */
-
 .container {
-    margin-top: 50px; /* Add margin to the top of the container */
+    margin-top: 50px; 
   }
   
   .input-group {
-    margin-bottom: 20px; /* Add margin below the input group */
+    margin-bottom: 20px; 
   }
   
   .list-group {
-    margin-bottom: 20px; /* Add margin below the list group */
+    margin-bottom: 20px; 
   }
   
   .my-custom-margin {
-    margin-left: 10px; /* Add margin to the left of the button */
+    margin-left: 10px;
   }
   
   .modal {
@@ -30,11 +28,43 @@
   }
   
   .modal-dialog {
-    width: 80%; /* Adjust the width of the modal dialog */
-    max-width: 600px; /* Set a maximum width */
-    background-color: #fff; /* White background */
+    width: 80%; 
+    max-width: 600px; 
+    background-color: #e9b880; 
     border-radius: 10px;
     padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add a shadow effect */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   }
-  
+
+
+
+.modal-content {
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); 
+    background-color: #061d33; 
+}
+
+.modal-header {
+    border-bottom: none;
+    background-color: #f31d52; 
+    color: #000000; 
+}
+
+.modal-body {
+    padding: 20px;
+}
+
+.modal-footer {
+    border-top: none; 
+    justify-content: space-between; 
+    background-color: #ced113;
+}
+
+
+.btn-primary, .btn-danger, .btn-success {
+    border-radius: 10px;
+}
+
+.btn-close {
+    color: #000; 
+}

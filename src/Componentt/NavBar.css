@@ -1,0 +1,58 @@
+.navbar {
+    background-color: #e9b880;
+}
+
+
+.profile-avatar {
+    width: 40px; 
+    height: 40px;
+    border-radius: 50%; 
+    margin-right: 10px; 
+}
+
+
+.profile-name {
+    font-weight: bold; 
+}
+
+
+.navbar-logo {
+    display: flex; 
+    align-items: center;
+    justify-content: center; 
+    flex-grow: 1; 
+}
+
+
+.logo-img {
+    width: 40px; 
+    height: auto; 
+    margin-right: 10px; 
+}
+
+
+@media (max-width: 991.98px) {
+    .logo-img {
+        border-radius: 50%; 
+    }
+}
+
+/* Navbar title */
+.navbar-title {
+    font-weight: bold; /* Bold font */
+    font-size: 18px; /* Adjust font size as needed */
+}
+
+/* Navbar buttons */
+.navbar-button {
+    margin-left: 10px; /* Spacing between buttons */
+}
+.navbar-logo span{
+    cursor: pointer;
+}
+/* Padding for navbar collapse on mobile */
+@media (max-width: 991.98px) {
+    .navbar-collapse.show {
+        padding-top: 10px; /* Adjust padding as needed */
+    }
+}
