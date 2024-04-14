@@ -113,7 +113,8 @@ const TodoApp = () => {
                   className="form-control mb-3"
                   value={modalTodoName}
                   onChange={(e) => setModalTodoName(e.target.value)}
-                />
+                />  
+                
                 <textarea
                   className="form-control mb-3"
                   value={modalTodoDescription}
