@@ -1,21 +1,21 @@
-/* styles.css */
-
 body {
-  background-color: #f0f0f0; /* Light gray background */
+  /* background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%); */
+  background-image: linear-gradient(to right, #848d35 0%, #466b65 50%, #201f1f 100%);
+
 }
 
 .container {
-  margin-top: 50px; /* Add margin to the top of the container */
+  margin-top: 50px;
 }
 
 .input-group {
-  margin-bottom: 20px; /* Add margin below the input group */
+  margin-bottom: 20px; 
 }
 
 .list-group {
-  margin-bottom: 20px; /* Add margin below the list group */
+  margin-bottom: 20px; 
 }
 
 .modal-dialog {
-  margin-top: 100px; /* Add margin to the top of the modal dialog */
+  margin-top: 100px;
 }

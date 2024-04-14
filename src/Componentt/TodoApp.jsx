@@ -66,7 +66,7 @@ const TodoApp = () => {
 
     return (
         <div className="container mt-5">
-            <div className="row justify-content-center">
+            <div className="row justify-content-center ">
                 <div className="col-md-6">
                     <div className="input-group mb-3">
                         <input
@@ -81,13 +81,15 @@ const TodoApp = () => {
                     <ul className="list-group">
                         {todos.map((todo, index) => (
                             <li
-                                key={index}
-                                onClick={() => openModal(index)}
-                                className={`list-group-item ${todo.completed ? 'bg-success text-white' : ''}`}
-                                style={{ cursor: 'pointer' }}
-                            >
-                                {todo.text}
-                            </li>
+                            key={index}
+                            onClick={() => openModal(index)}
+                            className={`list-group-item ${todo.completed ? 'bg-success text-white' : ''} ${todo.completed?'' : 'bg-warning text-dark'}`}
+                            title={todo.completed ? ` ${todo.text} is Already Completed` : `${todo.text} is Not Completed yet`}
+                            style={{ cursor: 'pointer' }}
+                        >
+                            {todo.text}
+                        </li>
+                        
                         ))}
                     </ul>
                 </div>
@@ -132,7 +134,6 @@ const TodoApp = () => {
                                 >
                                     {todos[modalTodoIndex]?.completed ? 'Mark as Uncompleted' : 'Mark as Completed'}
                                 </button>
-
                             </div>
                         </div>
                     </div>

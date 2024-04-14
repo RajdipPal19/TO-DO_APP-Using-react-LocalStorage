@@ -30,9 +30,9 @@
   .modal-dialog {
     width: 80%; 
     max-width: 600px; 
-    background-color: #e9b880; 
+    background-image: linear-gradient(to right, #242323 0%, #91a09d 50%, #4bd5ff 100%);
     border-radius: 10px;
-    padding: 20px;
+    padding: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   }
 
