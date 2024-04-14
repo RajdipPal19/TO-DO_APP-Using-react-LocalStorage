@@ -84,12 +84,11 @@ const TodoApp = () => {
                             key={index}
                             onClick={() => openModal(index)}
                             className={`list-group-item ${todo.completed ? 'bg-success text-white' : ''} ${todo.completed?'' : 'bg-warning text-dark'}`}
-                            title={todo.completed ? ` ${todo.text} is Already Completed` : `${todo.text} is Not Completed yet`}
+                            title={todo.completed ? ` ${todo.text} is already Completed` : `${todo.text} is not Completed yet`}
                             style={{ cursor: 'pointer' }}
                         >
                             {todo.text}
                         </li>
-                        
                         ))}
                     </ul>
                 </div>
