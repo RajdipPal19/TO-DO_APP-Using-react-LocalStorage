@@ -1,0 +1,21 @@
+/* styles.css */
+
+body {
+  background-color: #f0f0f0; /* Light gray background */
+}
+
+.container {
+  margin-top: 50px; /* Add margin to the top of the container */
+}
+
+.input-group {
+  margin-bottom: 20px; /* Add margin below the input group */
+}
+
+.list-group {
+  margin-bottom: 20px; /* Add margin below the list group */
+}
+
+.modal-dialog {
+  margin-top: 100px; /* Add margin to the top of the modal dialog */
+}
