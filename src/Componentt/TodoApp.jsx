@@ -76,7 +76,7 @@ const TodoApp = () => {
                             value={inputValue}
                             onChange={handleInputChange}
                         />
-                        <button className="btn btn-primary my-custom-margin" type="button" onClick={handleAddTodo}>Add Task</button>
+                        <button className="btn btn-primary my-custom-margin" type="button" onClick={handleAddTodo} title='Add the Task'>Add Task</button>
                     </div>
                     <ul className="list-group">
                         {todos.map((todo, index) => (
